@@ -58,6 +58,7 @@ def configure
     cookbook 'twemproxy'
     owner 'root'
     group 'root'
+    mode '0666'
     action config_action
     variables(
       :config => new_resource.config,
